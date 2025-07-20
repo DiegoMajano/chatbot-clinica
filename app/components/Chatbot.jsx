@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react"
-import knowledgeBase from "../data/knowledgeBase.json" 
+import knowledgeBase from "../data/knowledgeBase.json"
 
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
-    {sender: "bot", text: "Hola, ¿en qué puedo ayudarte hoy?"},
+    { sender: "bot", text: "Hola, ¿en qué puedo ayudarte hoy?" },
   ])
   const [input, setInput] = useState("")
 
@@ -20,37 +20,44 @@ export default function Chatbot() {
     if (!input.trim()) return
 
     const userMessage = { text: input, sender: "user" }
-    const botResponse = generateResponse(input.toLowerCase())
+    const botResponse = enviarPregunta(input.toLowerCase())
 
     setMessages((prev) => [...prev, userMessage, { text: botResponse, sender: "bot" }])
     setInput("")
   }
 
-    const generateResponse = (userInput) => {
-        for(let entry of knowledgeBase){
-            if(entry.keywords.some(keyword => userInput.includes(keyword))){
-                return entry.response
-            }
-        } 
-        return "Lo siento, no tengo información sobre eso. ¿Puedes preguntar algo más específico?"
+    const enviarPregunta = async (message) => {
+      console.log(message);
+      
+      const res = await fetch('http://localhost:3001/api/chatbot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          preguntaUsuario: message,
+          baseDeDatos: knowledgeBase 
+        })
+      });
+
+      const data = await res.json()
+
+      return data.respuesta
     }
 
-  return (
+    return (
       <div className="w-full max-w-xl mx-auto mt-8 p-4 border rounded-md bg-white shadow">
         <div className="h-96 overflow-y-auto space-y-2 mb-4">
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`p-3 rounded-md max-w-xs ${
-                message.sender === "bot"
+              className={`p-3 rounded-md max-w-xs ${message.sender === "bot"
                   ? "bg-blue-100 text-left"
                   : "bg-green-100 ml-auto text-right"
-              }`}
+                }`}
             >
               {message.text}
             </div>
           ))}
-          <div ref={endOfMessagesRef}/>
+          <div ref={endOfMessagesRef} />
         </div>
         <div className="flex gap-2">
           <input
@@ -69,5 +76,5 @@ export default function Chatbot() {
           </button>
         </div>
       </div>
-  )
-}
+    )
+  }
