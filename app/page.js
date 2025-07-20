@@ -3,12 +3,13 @@ import Chatbot from "./components/Chatbot";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="font-sans items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-gray-300">
+      <main className="flex flex-col gap-[32px] items-center sm:items-start">
+        <h1 className="text-3xl font-bold mb-6">Chatbot - Clínica de Atención Primaria</h1>
         <Chatbot />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <p>© 2025 Chatbot Clinic. All rights reserved.</p>
+      <footer className="fixed bottom-0 left-0 right-0 flex gap-[24px] flex-wrap items-center justify-center">
+        <p>© 2025 Chatbot Clinica. All rights reserved.</p>
       </footer>
     </div>
   );

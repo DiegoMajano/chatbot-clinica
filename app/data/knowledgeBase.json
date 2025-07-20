@@ -1,0 +1,22 @@
+[
+  {
+    "keywords": ["cabeza", "dolor"],
+    "response": "Podrías consultar con un neurólogo o médico general."
+  },
+  {
+    "keywords": ["respirar", "molestias"],
+    "response": "Es recomendable que acudas a un neumólogo."
+  },
+  {
+    "keywords": ["fiebre", "tres días"],
+    "response": "Si tienes fiebre alta por más de tres días, ve al médico general o urgencias."
+  },
+  {
+    "keywords": ["psicólogo", "estresado"],
+    "response": "Claro, puedes hablar con uno de nuestros psicólogos."
+  },
+  {
+    "keywords": ["horario","horarios", "atención"],
+    "response": "La clínica atiende de lunes a viernes de 7:00 a.m. a 5:00 p.m."
+  }
+]
