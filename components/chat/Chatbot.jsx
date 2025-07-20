@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react"
-import knowledgeBase from "../data/knowledgeBase.json"
+import knowledgeBase from "@/app/data/knowledgeBase.json"
 
 
 export default function Chatbot() {
