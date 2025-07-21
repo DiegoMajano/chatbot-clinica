@@ -5,8 +5,6 @@ import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import AboutUs from "@/components/landing/AboutUs";
 import Contact from "@/components/landing/Contact";
-import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
 import ChatbotButton from "@/components/landing/ChatbotButton";
 
 export default function Home() {
