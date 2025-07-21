@@ -1,22 +1,62 @@
 [
   {
     "keywords": ["cabeza", "dolor"],
-    "response": "Podrías consultar con un neurólogo o médico general."
+    "response": "Podrías consultar con un neurólogo o un médico general para evaluar el dolor de cabeza constante."
   },
   {
-    "keywords": ["respirar", "molestias"],
-    "response": "Es recomendable que acudas a un neumólogo."
+    "keywords": ["respirar", "molestia", "molestias"],
+    "response": "Es recomendable que acudas a un neumólogo para revisar las molestias al respirar."
   },
   {
-    "keywords": ["fiebre", "tres días"],
-    "response": "Si tienes fiebre alta por más de tres días, ve al médico general o urgencias."
+    "keywords": ["fiebre", "tres días", "alta"],
+    "response": "Si tienes fiebre alta por más de tres días, acude al médico general o a emergencias."
   },
   {
-    "keywords": ["psicólogo", "estresado"],
-    "response": "Claro, puedes hablar con uno de nuestros psicólogos."
+    "keywords": ["diferencia", "médico general", "internista"],
+    "response": "Un médico general atiende una variedad de condiciones comunes, mientras que un internista se especializa en enfermedades de adultos y problemas internos más complejos."
   },
   {
-    "keywords": ["horario","horarios", "atención"],
-    "response": "La clínica atiende de lunes a viernes de 7:00 a.m. a 5:00 p.m."
+    "keywords": ["alergias", "alergia", "especialista"],
+    "response": "Para temas de alergias, deberías consultar a un alergólogo."
+  },
+  {
+    "keywords": ["dermatólogo", "piel"],
+    "response": "Deberías consultar a un dermatólogo si tienes problemas en la piel, como acné, manchas o irritaciones."
+  },
+  {
+    "keywords": ["horario", "horarios", "atención"],
+    "response": "La clínica atiende de lunes a viernes, de 7:00 a.m. a 6:00 p.m. sabados, de 8:00 a.m. a 2:00 p.m. Emergencias todos los días"
+  },
+  {
+    "keywords": ["cita", "agendar", "programar"],
+    "response": "Puedes agendar una cita médica llamando a nuestra línea directa o desde nuestro sitio web."
+  },
+  {
+    "keywords": ["urgencias", "emergencias"],
+    "response": "Sí, la clínica atiende urgencias médicas durante el horario de atención."
+  },
+  {
+    "keywords": ["psicólogo", "estresado", "estrés", "hablar"],
+    "response": "Claro, puedes hablar con uno de nuestros psicólogos. Agenda tu cita para recibir apoyo emocional."
+  },
+  {
+    "keywords": ["chequeos", "preventivos", "anuales"],
+    "response": "Se recomienda realizarse un chequeo médico general una vez al año. También puedes consultar exámenes específicos según tu edad y condición."
+  },
+  {
+    "keywords": ["nutrición", "peso", "nutricionista"],
+    "response": "Sí, la clínica ofrece servicios de nutrición y control de peso con profesionales capacitados."
+  },
+  {
+    "keywords": ["documentos", "registrarme", "nuevo paciente"],
+    "response": "Para registrarte como nuevo paciente, necesitas tu DUI, número de seguro (si aplica) y llenar un formulario de ingreso."
+  },
+  {
+    "keywords": ["seguros", "privados", "aceptan"],
+    "response": "Sí, la clínica acepta varios seguros médicos privados. Consulta con nosotros para verificar si tu seguro está incluido."
+  },
+  {
+    "keywords": ["historial", "médico", "solicitar"],
+    "response": "Puedes solicitar tu historial médico en recepción o mediante nuestro portal en línea."
   }
 ]
