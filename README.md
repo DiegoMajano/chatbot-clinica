@@ -13,15 +13,14 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu máquina:
 - [Node.js](https://nodejs.org/) versión 16 o superior  
 - npm (viene incluido con Node.js)  
 
+Sigue los pasos del repositorio para implementar el servidor local en tu máquina para la funcionalidad de la IA:
+
+- [Servidor local con Node](https://github.com/DiegoMajano/chatbot-clinica-backend)
+
 ---
 
 ## Instalación y ejecución
 
-Sigue los pasos del repositorio para implementar el servidor local en tu máquina para la funcionalidad de la IA:
-
-[Servidor local con Node](https://github.com/DiegoMajano/chatbot-clinica-backend)
-
-Luego que ya tengas preparado el servidor, sigue los siguientes pasos:
 
 1. Clona el repositorio:
 
